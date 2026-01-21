@@ -1,0 +1,22 @@
+[
+  {
+    "code": 200,
+    "name": "OK",
+    "category": "Success",
+    "description": "The request was successful.",
+    "whenToUse": "Use when a GET or PUT request succeeds.",
+    "example": {
+      "message": "Request completed successfully."
+    }
+  },
+  {
+    "code": 400,
+    "name": "Bad Request",
+    "category": "Client Error",
+    "description": "The request payload is invalid.",
+    "whenToUse": "Use when validation fails or required fields are missing.",
+    "example": {
+      "message": "Email is required."
+    }
+  }
+]
