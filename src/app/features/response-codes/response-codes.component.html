@@ -1,0 +1,37 @@
+<h1 class="page-title">REST API Response Codes</h1>
+
+@for (cat of categories; track cat.key) {
+  <section class="category-section">
+    <div class="category-header" [style.border-color]="cat.color">
+      <span class="dot" [style.background]="cat.color"></span>
+      <h2>{{ cat.label }}</h2>
+    </div>
+
+    <div class="grid">
+      @for (code of groupedCodes[cat.key]; track code.code) {
+        <div class="card" [attr.data-category]="code.category">
+          <div class="header">
+            <span class="status-code" (click)="copy(code.code)">
+              {{ code.code }}
+            </span>
+            <span class="status-name">{{ code.name }}</span>
+          </div>
+
+          <p class="description">{{ code.description }}</p>
+
+          <div class="extra">
+            <div class="section">
+              <span class="label">When to use</span>
+              <p>{{ code.whenToUse }}</p>
+            </div>
+
+            <div class="section example">
+              <span class="label">Example</span>
+              <code>{{ code.example.message }}</code>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+}

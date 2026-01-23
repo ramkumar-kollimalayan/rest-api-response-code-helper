@@ -1,0 +1,218 @@
+[
+  {
+    "code": 100,
+    "name": "Continue",
+    "category": "Informational",
+    "description": "The server has received the request headers and the client should proceed to send the request body.",
+    "whenToUse": "Used when the client sends large payloads and waits for server approval.",
+    "example": { "message": "Continue sending request body." }
+  },
+  {
+    "code": 101,
+    "name": "Switching Protocols",
+    "category": "Informational",
+    "description": "The server is switching protocols as requested by the client.",
+    "whenToUse": "Used during protocol upgrades like HTTP to WebSocket.",
+    "example": { "message": "Switching to WebSocket protocol." }
+  },
+  {
+    "code": 200,
+    "name": "OK",
+    "category": "Success",
+    "description": "The request was successful.",
+    "whenToUse": "Standard response for successful GET, PUT, DELETE.",
+    "example": { "message": "Request completed successfully." }
+  },
+  {
+    "code": 201,
+    "name": "Created",
+    "category": "Success",
+    "description": "A new resource was successfully created.",
+    "whenToUse": "Use after successful POST requests.",
+    "example": { "message": "User created successfully." }
+  },
+  {
+    "code": 202,
+    "name": "Accepted",
+    "category": "Success",
+    "description": "The request has been accepted for processing but not completed.",
+    "whenToUse": "Use for async or background processing.",
+    "example": { "message": "Request accepted and will be processed later." }
+  },
+  {
+    "code": 204,
+    "name": "No Content",
+    "category": "Success",
+    "description": "The request was successful but there is no response body.",
+    "whenToUse": "Use after successful DELETE operations.",
+    "example": { "message": "Operation successful. No content returned." }
+  },
+  {
+    "code": 301,
+    "name": "Moved Permanently",
+    "category": "Redirection",
+    "description": "The resource has been permanently moved to a new URL.",
+    "whenToUse": "Use when URLs change permanently.",
+    "example": { "message": "Resource moved permanently." }
+  },
+  {
+    "code": 302,
+    "name": "Found",
+    "category": "Redirection",
+    "description": "The resource is temporarily located at a different URL.",
+    "whenToUse": "Temporary redirects.",
+    "example": { "message": "Resource temporarily moved." }
+  },
+  {
+    "code": 304,
+    "name": "Not Modified",
+    "category": "Redirection",
+    "description": "The cached version of the resource is still valid.",
+    "whenToUse": "Used with caching mechanisms.",
+    "example": { "message": "Cached version is valid." }
+  },
+  {
+    "code": 307,
+    "name": "Temporary Redirect",
+    "category": "Redirection",
+    "description": "Temporary redirect without changing HTTP method.",
+    "whenToUse": "Temporary redirects preserving request method.",
+    "example": { "message": "Temporarily redirected." }
+  },
+  {
+    "code": 308,
+    "name": "Permanent Redirect",
+    "category": "Redirection",
+    "description": "Permanent redirect without changing HTTP method.",
+    "whenToUse": "Permanent redirects preserving request method.",
+    "example": { "message": "Permanently redirected." }
+  },
+  {
+    "code": 400,
+    "name": "Bad Request",
+    "category": "Client Error",
+    "description": "Invalid request syntax or data.",
+    "whenToUse": "Validation or malformed request errors.",
+    "example": { "message": "Invalid request payload." }
+  },
+  {
+    "code": 401,
+    "name": "Unauthorized",
+    "category": "Client Error",
+    "description": "Authentication is required.",
+    "whenToUse": "Missing or invalid authentication token.",
+    "example": { "message": "Authentication required." }
+  },
+  {
+    "code": 403,
+    "name": "Forbidden",
+    "category": "Client Error",
+    "description": "User is authenticated but not authorized.",
+    "whenToUse": "Access control violations.",
+    "example": { "message": "Access denied." }
+  },
+  {
+    "code": 404,
+    "name": "Not Found",
+    "category": "Client Error",
+    "description": "The requested resource does not exist.",
+    "whenToUse": "Invalid or missing endpoint.",
+    "example": { "message": "Resource not found." }
+  },
+  {
+    "code": 405,
+    "name": "Method Not Allowed",
+    "category": "Client Error",
+    "description": "HTTP method is not supported for this endpoint.",
+    "whenToUse": "Wrong HTTP method used.",
+    "example": { "message": "Method not allowed." }
+  },
+  {
+    "code": 408,
+    "name": "Request Timeout",
+    "category": "Client Error",
+    "description": "The client took too long to send the request.",
+    "whenToUse": "Client-side delays.",
+    "example": { "message": "Request timed out." }
+  },
+  {
+    "code": 409,
+    "name": "Conflict",
+    "category": "Client Error",
+    "description": "Request conflicts with the current state of the resource.",
+    "whenToUse": "Duplicate entries or version conflicts.",
+    "example": { "message": "Resource conflict detected." }
+  },
+  {
+    "code": 413,
+    "name": "Payload Too Large",
+    "category": "Client Error",
+    "description": "Request entity is too large.",
+    "whenToUse": "File upload size exceeded.",
+    "example": { "message": "Payload too large." }
+  },
+  {
+    "code": 415,
+    "name": "Unsupported Media Type",
+    "category": "Client Error",
+    "description": "Unsupported request content type.",
+    "whenToUse": "Invalid Content-Type header.",
+    "example": { "message": "Unsupported media type." }
+  },
+  {
+    "code": 422,
+    "name": "Unprocessable Entity",
+    "category": "Client Error",
+    "description": "Validation errors in the request.",
+    "whenToUse": "API validation failures.",
+    "example": { "message": "Validation error." }
+  },
+  {
+    "code": 429,
+    "name": "Too Many Requests",
+    "category": "Client Error",
+    "description": "Rate limit exceeded.",
+    "whenToUse": "API throttling.",
+    "example": { "message": "Too many requests. Try again later." }
+  },
+  {
+    "code": 500,
+    "name": "Internal Server Error",
+    "category": "Server Error",
+    "description": "Generic server failure.",
+    "whenToUse": "Unexpected server errors.",
+    "example": { "message": "Something went wrong." }
+  },
+  {
+    "code": 501,
+    "name": "Not Implemented",
+    "category": "Server Error",
+    "description": "The server does not support the requested functionality.",
+    "whenToUse": "Feature not implemented.",
+    "example": { "message": "Feature not supported." }
+  },
+  {
+    "code": 502,
+    "name": "Bad Gateway",
+    "category": "Server Error",
+    "description": "Invalid response from upstream server.",
+    "whenToUse": "API gateway failures.",
+    "example": { "message": "Bad gateway response." }
+  },
+  {
+    "code": 503,
+    "name": "Service Unavailable",
+    "category": "Server Error",
+    "description": "Server is temporarily unavailable.",
+    "whenToUse": "Maintenance or overload.",
+    "example": { "message": "Service unavailable." }
+  },
+  {
+    "code": 504,
+    "name": "Gateway Timeout",
+    "category": "Server Error",
+    "description": "Upstream server failed to respond in time.",
+    "whenToUse": "Timeouts between services.",
+    "example": { "message": "Gateway timeout." }
+  }
+]
