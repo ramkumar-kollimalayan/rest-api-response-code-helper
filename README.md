@@ -49,11 +49,10 @@ This tool focuses **only on REST APIs**, not general browser-based HTTP behavior
 
 ---
 
-## 🧪 Example
+## 📸 Screenshots
 
-### 404 – Not Found
+### REST API Response Codes UI
 
-Returned when the requested resource does not exist.
+![REST API Response Codes UI](screenshots/ui.jpeg)
 
-```http
-404 Not Found
+---
