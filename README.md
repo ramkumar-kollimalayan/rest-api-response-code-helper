@@ -1,50 +1,57 @@
 # REST API Response Code Helper
 
-A Swagger-inspired helper that explains REST API response codes with clear explanations and real-world examples.
+An interactive, Swagger-inspired UI that explains REST API response codes with clear explanations, usage guidance, and real-world examples.
 
 ---
 
 ## 🚀 Why this project?
 
 Choosing the correct HTTP response code in REST APIs is often confusing and inconsistent.
-This project aims to provide a **simple, practical reference** for developers to understand:
+This project provides a **simple, practical, and visual reference** to help developers:
 
-- When to use specific response codes
-- What each response code means in a REST API context
-- How to structure API responses clearly and consistently
+- Understand what each REST API response code means
+- Know when to use specific response codes
+- Follow REST-focused best practices
+- Avoid common API design mistakes
 
-This guide focuses **only on REST APIs**, not general HTTP behavior.
+This tool focuses **only on REST APIs**, not general browser-based HTTP behavior.
 
 ---
 
 ## 🎯 Scope
 
-This project focuses on:
+### This project focuses on:
 - REST API best practices
-- Commonly used HTTP response codes
-- Real-world API scenarios
-- Swagger / OpenAPI–style documentation
+- HTTP response codes used in APIs (1xx → 5xx)
+- Real-world backend/API scenarios
+- Swagger / OpenAPI–style understanding
 
-This project **does not** cover:
+### This project does NOT cover:
 - Browser-based HTTP responses
-- HTML responses
-- Non-API use cases
+- HTML page responses
+- Non-API HTTP use cases
 
 ---
 
 ## 📚 What’s Included
 
-- Categorized REST API response codes (2xx, 4xx, 5xx)
-- Clear, human-friendly explanations
-- When to use each response code
+- Categorized REST API response codes:
+  - 🔵 1xx – Informational
+  - 🟢 2xx – Success
+  - 🔵 3xx – Redirection
+  - 🟠 4xx – Client Errors
+  - 🔴 5xx – Server Errors
+- Clean, interactive card-based UI
+- Clear descriptions for each response code
+- “When to use” guidance
 - Example JSON API responses
-- REST-focused best practices
+- REST-focused explanations (not protocol-heavy)
 
 ---
 
-## 🔢 Example
+## 🧪 Example
 
-### 404 Not Found
+### 404 – Not Found
 
 Returned when the requested resource does not exist.
 
