@@ -3,6 +3,7 @@
 ![Angular](https://img.shields.io/badge/Angular-17-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active-success)
+![GitHub Pages](https://img.shields.io/badge/Live-Demo-green)
 ![GitHub stars](https://img.shields.io/github/stars/ramkumar-kollimalayan/rest-api-response-code-helper?style=social)
 
 An interactive, Swagger-inspired UI that explains REST API response codes with clear explanations, usage guidance, and real-world examples.
