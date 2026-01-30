@@ -45,6 +45,13 @@ This tool focuses **only on REST APIs**, not general browser-based HTTP behavior
 
 ---
 
+## 🎯 When to use this
+- API design 
+- Code reviews 
+- Backend–frontend contracts 
+- Interview preparation 
+---
+
 ## 📚 What’s Included
 
 - Categorized REST API response codes:
