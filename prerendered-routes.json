@@ -1,5 +1,3 @@
 {
-  "routes": {
-    "/rest-api-response-code-helper": {}
-  }
+  "routes": {}
 }
